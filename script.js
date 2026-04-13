@@ -13,15 +13,17 @@
 (function () {
   "use strict";
 
-  // Game catalog — loaded through jsDelivr CDN from gn-math/html
+  // Game catalog — wrapper HTML files served from this repo.
+  // (The inner game assets still load from bubbls/* on jsDelivr,
+  // which is not blocked — only gn-math was.)
   var GAMES = {
     fnae: {
       title: "Five Nights at Epstein's",
-      url: "https://cdn.jsdelivr.net/gh/gn-math/html@main/750-u.html"
+      url: "games/fnae.html"
     },
     ebik: {
       title: "Epstein's Basics in Kidnapping",
-      url: "https://cdn.jsdelivr.net/gh/gn-math/html@main/751.html"
+      url: "games/ebik.html"
     }
   };
 
